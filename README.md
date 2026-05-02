@@ -104,3 +104,15 @@ Yerel bilgisayarımızda kaydettiğimiz bu değişiklikleri internetteki (GitHub
 🔄 Arayüzde Ne Yapıyoruz? Commit işlemini tamamladıktan sonra beliren mavi renkli Sync Changes (Değişiklikleri Eşitle) butonuna tıklarız. Bu buton arka planda hem yeni değişiklikleri çeker hem de bizimkileri gönderir.
 
 💻 Terminaldeki Karşılığı: git push (ve öncesinde varsa git pull)
+
+👤 Git'e Kendinizi Tanıtın (Kimlik Ayarları)
+
+Eğer bilgisayarınızda Git'i ilk kez kurup kullanıyorsanız, dosyalarınızı kaydetmeye (Commit) çalıştığınızda Git size "Sen kimsin?" (Author identity unknown) şeklinde bir hata verebilir. Çünkü Git, takım çalışmalarında karışıklık olmaması için yazdığınız kodların kimin tarafından yapıldığını kayıt altına almak ister.
+
+Bunu çözmek için terminale sırasıyla şu iki komutu girerek kendinizi tanıtmanız yeterlidir:
+
+📛 Adınızı belirleyin:
+git config --global user.name "Adınız Soyadınız"
+
+📧 GitHub E-postanızı belirleyin:
+git config --global user.email "githuba_kayitli_epostaniz@mail.com"
