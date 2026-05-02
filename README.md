@@ -75,3 +75,32 @@ Projelerimizi komut satırında yönetirken sıkça kullandığımız temel komu
 🚀 git push : Bilgisayarınızdaki yerel güncellemeleri GitHub'a (uzak depoya) gönderir.
 
 🔄 git pull : GitHub'daki güncel değişiklikleri bilgisayarınıza çeker.
+
+------------------------------------------------------------------------------------------------------------------------
+
+🖥️ VS Code Arayüzü (GUI) ile Kod Gönderme Rehberi
+
+Terminal komutlarını ezberlemek istemediğimizde veya günlük çalışma akışımızı hızlandırmak istediğimizde, VS Code'un sol menüsünde yer alan Source Control (üzerinde yol ayrımı olan dal simgesi 🌿) panelini kullanabiliriz.
+
+İşte arayüzdeki işlemlerin terminaldeki karşılıkları:
+
+1️⃣ Değişiklikleri Sahneye Al (Staging)
+Dosyalarında bir değişiklik yapıp kaydettiğinde, Source Control panelindeki "Changes" (Değişiklikler) başlığı altında görünürler.
+
+🖱️ Arayüzde Ne Yapıyoruz? Değiştirilen dosyaların veya "Changes" yazısının hemen yanındaki + (Artı) simgesine tıklayarak dosyaları "Staged Changes" kısmına alırız.
+
+💻 Terminaldeki Karşılığı: git add .
+
+2️⃣ Değişiklikleri Kaydet (Commit)
+Sahneye aldığımız dosyaları, ne değişiklik yaptığımızı belirterek yerel bilgisayarımıza kaydetme adımıdır.
+
+💬 Arayüzde Ne Yapıyoruz? Üstteki boş "Message" kutusuna yaptığımız değişikliği anlatan kısa bir not yazarız (Örn: index.html güncellendi). Ardından hemen altındaki mavi Commit butonuna (veya üstteki ✓ simgesine) tıklarız.
+
+💻 Terminaldeki Karşılığı: git commit -m "index.html güncellendi"
+
+3️⃣ GitHub'a Gönder ve Eşitle (Push / Sync)
+Yerel bilgisayarımızda kaydettiğimiz bu değişiklikleri internetteki (GitHub) depomuza fırlatma vaktidir.
+
+🔄 Arayüzde Ne Yapıyoruz? Commit işlemini tamamladıktan sonra beliren mavi renkli Sync Changes (Değişiklikleri Eşitle) butonuna tıklarız. Bu buton arka planda hem yeni değişiklikleri çeker hem de bizimkileri gönderir.
+
+💻 Terminaldeki Karşılığı: git push (ve öncesinde varsa git pull)
