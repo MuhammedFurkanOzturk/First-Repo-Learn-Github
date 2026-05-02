@@ -20,6 +20,8 @@ Yeni bir proje başlatırken karşımıza çıkan bazı temel ayarlar ve anlamla
 
 ⚖️ License: Yazdığınız kodun başkaları tarafından hangi yasal şartlar altında kullanılabileceğini, paylaşılabileceğini veya değiştirilebileceğini belirleyen belgedir.Ben bu projede kodlarımın herkes tarafından özgürce kullanılıp geliştirilebilmesi için esnek ve açık kaynak dostu olan MIT Lisansı'nı kullandım.
 
+------------------------------------------------------------------------------------------------------------------------
+
 🤔 Git ve GitHub Nedir? Farkları Nelerdir?
 
 🛠️ Git Nedir?
