@@ -78,6 +78,54 @@ Projelerimizi komut satırında yönetirken sıkça kullandığımız temel komu
 
 ------------------------------------------------------------------------------------------------------------------------
 
+🛠️ Sıfırdan Proje Oluşturma ve GitHub'a Gönderme Adımları
+
+Terminali açtıktan sonra sırasıyla şu adımları izleyerek projemizi yerelden (bilgisayardan) buluta (GitHub'a) taşıyoruz:
+
+1️⃣ Klasör ve Dosya Oluşturma (Temel Terminal İşlemleri)
+
+📂 cd Desktop : Masaüstüne geçiş yaparız.
+
+📁 mkdir <klasör_adı> : Masaüstünde yeni bir klasör oluştururuz.
+
+➡️ cd <klasör_adı> : Oluşturduğumuz klasörün içine gireriz.
+
+📄 touch index.html : Klasör içinde index.html adında boş bir dosya oluştururuz.
+
+📋 ls : Klasörün içindekileri listeler, dosyamızın başarıyla oluştuğunu teyit ederiz.
+
+🍎 open . (Mac) veya 🪟 explorer . (Windows) : Bulunduğumuz klasörü görsel bir pencere olarak açar.
+
+💻 code . : Projemizi doğrudan VS Code editörü içinde açar.
+
+2️⃣ Git'i Başlatma ve Durum Kontrolü
+
+🔍 git status : Depomuzun o anki durumunu gösterir. (Eğer henüz Git başlatılmadıysa hata verir).
+
+🌱 git init : Bulunduğumuz klasörü bir Git deposu (repository) haline getiririz. VS Code'da yeni eklediğimiz dosyanın yanında U (Untracked - Takip Edilmeyen) harfi belirir.
+
+❓ git status : Tekrar durum kontrolü yaptığımızda index.html dosyasının kırmızı renkte olduğunu görürüz. Bunun nedeni, Git'in dosyanın varlığını bilmesi ama henüz değişiklikleri takip etmeye başlamamasıdır.
+
+3️⃣ Dosyaları Sahneye Alma ve Kaydetme (Commit)
+
+➕ git add . : DİKKAT! Bu komut dosyaları GitHub'a göndermez. Yapılan değişiklikleri paketlenmek üzere Git'in "Sahne"sine (Staging Area) ekler.
+
+✅ git status : Dosyaların artık yeşil renge döndüğünü ve "Changes to be committed" (Kaydedilmeye hazır) aşamasına geldiğini görürüz.
+
+💾 git commit -m "ilk commit mesajım" : Sahnedeki değişikliklerin kesin bir fotoğrafını çeker ve kendi bilgisayarımıza kaydeder. VS Code'daki U harfi artık kaybolur çünkü dosya güvenli bir şekilde kayıt altına alınmıştır.
+
+🧹 git status : Şimdi durum sorguladığımızda "Nothing to commit, working tree clean" mesajını alırız. Yani yerel bilgisayarımızda kaydedilecek başka hiçbir şey kalmamıştır, her şey tertemizdir.
+
+4️⃣ GitHub ile Bağlantı Kurma ve Kodları Fırlatma
+
+🌿 git branch -M main : Eskiden "master" olarak isimlendirilen ana çalışma dalımızın adını, güncel standartlara uyarak "main" olarak değiştiririz.
+
+🔗 git remote add origin [https://github.com/KULLANICI_ADIN/REPO_ADIN.git](https://github.com/KULLANICI_ADIN/REPO_ADIN.git) : Bilgisayarımızdaki yerel klasör ile internetteki (GitHub'daki) uzak depoyu birbirine bağlarız.
+
+🚀 git push -u origin main : Ve mutlu son! Bilgisayarımızda kaydettiğimiz (commit attığımız) tüm dosyaları GitHub sunucularına göndeririz.
+
+------------------------------------------------------------------------------------------------------------------------
+
 🖥️ VS Code Arayüzü (GUI) ile Kod Gönderme Rehberi
 
 Terminal komutlarını ezberlemek istemediğimizde veya günlük çalışma akışımızı hızlandırmak istediğimizde, VS Code'un sol menüsünde yer alan Source Control (üzerinde yol ayrımı olan dal simgesi 🌿) panelini kullanabiliriz.
