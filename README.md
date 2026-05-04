@@ -142,7 +142,8 @@ Dosyalarında bir değişiklik yapıp kaydettiğinde, Source Control panelindeki
 2️⃣ Değişiklikleri Kaydet (Commit)
 Sahneye aldığımız dosyaları, ne değişiklik yaptığımızı belirterek yerel bilgisayarımıza kaydetme adımıdır.
 
-💬 Arayüzde Ne Yapıyoruz? Üstteki boş "Message" kutusuna yaptığımız değişikliği anlatan kısa bir not yazarız (Örn: index.html güncellendi). Ardından hemen altındaki mavi Commit butonuna (veya üstteki ✓ simgesine) tıklarız.
+💬 Arayüzde Ne Yapıyoruz? Üstteki boş "Message" kutusuna yaptığımız değişikliği anlatan kısa bir not yazarız (Örn: index.html güncellendi). Ardından hemen altındaki mavi Commit butonuna (veya üstteki ✓ simgesine) tıklarız. 
+    !!! vscode içinden commit ederken message kısmını kesin doldurmalısın yoksa seni başka bir sayfaya yönlendirir ve mesaj yaz diye uyarır
 
 💻 Terminaldeki Karşılığı: git commit -m "index.html güncellendi"
 
