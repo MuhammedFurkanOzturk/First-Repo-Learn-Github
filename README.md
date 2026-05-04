@@ -164,3 +164,58 @@ git config --global user.name "Adınız Soyadınız"
 
 📧 GitHub E-postanızı belirleyin:
 git config --global user.email "githuba_kayitli_epostaniz@mail.com"
+
+------------------------------------------------------------------------------------------------------------------------
+
+⏳ Uzun Bir Aradan Sonra Projeye Dönüş (Geri Dönüş Ritüeli)
+
+Bilgisayarı kapatıp günler sonra projemize tekrar döndüğümüzde baştan git init veya git remote add gibi kurulum komutlarını girmemize gerek yoktur. Git, projemizin geçmişini ve GitHub bağlantısını sonsuza dek hatırlar. Sadece klasörümüzün içine girip (cd klasor_adi) şu rutin adımları izlememiz yeterlidir:
+
+1️⃣ Durum Kontrolü (Röntgen Çekmek)
+Masaya oturduğumuzda ilk iş, projenin ve Git'in ne durumda olduğunu kontrol etmektir.
+
+💻 Komut: git status
+
+🖥️ Terminal Çıktısının Anlamı:
+
+On branch main 👉 Doğru yerde, ana daldasınız.
+
+Your branch is up to date with 'origin/main' 👉 Bilgisayarınızdaki dosyalar GitHub'daki deponuzla kelimesi kelimesine aynı ve güncel.
+
+nothing to commit, working tree clean 👉 Kaydedilmeyi bekleyen yeni bir değişiklik yok, çalışma masanız tertemiz.
+
+2️⃣ İnternetteki Değişiklikleri Çekme (Senkronizasyon)
+Biz yokken GitHub üzerinden (veya başka bir ekip arkadaşımız tarafından) projede bir değişiklik yapılmış olma ihtimaline karşı bilgisayarımızı güncelleriz.
+
+💻 Komut: git pull origin main
+
+🖥️ Terminal Çıktısının Anlamı:
+
+Eğer Already up to date. yazıyorsa, GitHub'da yeni bir kod yoktur, zaten en güncel sürüme sahibiz demektir. Güvenle işe başlayabiliriz.
+
+3️⃣ Editörü Aç ve Çalışmaya Başla
+Her şeyin temiz ve güncel olduğundan emin olduktan sonra kod editörümüzü açar ve projemize kaldığımız yerden devam ederiz.
+
+💻 Komut: code . (VS Code'u bulunduğumuz klasörde açar)
+
+------------------------------------------------------------------------------------------------------------------------
+
+🕰️ Zaman Makinesi: Git Log (Geçmişi İncelemek)
+
+Projeye başından beri kimin, ne zaman, hangi kodları eklediğini görmek için Git'in "günlük" özelliğini kullanırız.
+
+💻 Komut: git log
+
+Bu komutu yazdığımızda karşımıza geçmişten günümüze doğru tüm kayıtların (commit) detaylı bir listesi çıkar:
+
+🆔 commit 60abf... : Değişikliğin Git dünyasındaki benzersiz kimlik numarasıdır (Hash kodu). Eski bir sürüme dönmek için bu kod kullanılır.
+
+📍 (HEAD -> main, origin/main) : Şu an projenin en güncel noktasında (HEAD) olduğumuzu ve bilgisayarımız ile GitHub'ın tam senkronize olduğunu gösterir.
+
+👤 Author: Furkan Öztürk <mail@...> : Değişikliği kimin yaptığını gösterir. (Kimlik doğrulama ayarlarımızın çalıştığının kanıtıdır).
+
+🕒 Date: Sat May 2... : O kaydın tam olarak hangi gün ve saatte yapıldığını belirtir.
+
+💬 "readme güncellendi" : Değişikliği kaydederken yazdığımız açıklama (commit) mesajıdır.
+
+🛑 ÖNEMLİ İPUCU - Log Ekranından Çıkmak: Geçmiş kayıtlar çok uzunsa, terminal hepsini bir ekrana sığdıramaz ve ekranın en altında : (iki nokta) işareti belirir. Sayfada aşağı inmek için Enter tuşunu kullanabilirsiniz. İşiniz bittiğinde bu ekrandan çıkıp normal komut satırına dönmek için klavyeden sadece q (quit/çıkış) tuşuna basmanız yeterlidir!
