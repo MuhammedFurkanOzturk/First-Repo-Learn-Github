@@ -220,3 +220,24 @@ Bu komutu yazdığımızda karşımıza geçmişten günümüze doğru tüm kay�
 💬 "readme güncellendi" : Değişikliği kaydederken yazdığımız açıklama (commit) mesajıdır.
 
 🛑 ÖNEMLİ İPUCU - Log Ekranından Çıkmak: Geçmiş kayıtlar çok uzunsa, terminal hepsini bir ekrana sığdıramaz ve ekranın en altında : (iki nokta) işareti belirir. Sayfada aşağı inmek için Enter tuşunu kullanabilirsiniz. İşiniz bittiğinde bu ekrandan çıkıp normal komut satırına dönmek için klavyeden sadece q (quit/çıkış) tuşuna basmanız yeterlidir!
+
+------------------------------------------------------------------------------------------------------------------------
+
+🌍 GitHub Pages ile Projeyi Canlıya Alma (Bedava Hosting!)
+
+Projelerimizi sadece kod olarak saklamakla kalmayıp, herkesin erişebileceği canlı bir web sitesine dönüştürmek için GitHub'ın bize sunduğu harika ve tamamen ücretsiz bir özellik olan GitHub Pages'i kullandım.
+
+GitHub Pages, repomuzdaki statik kodları (HTML, CSS, JS) alıp bize ömür boyu ücretsiz bir alan adı (domain) ve sunucu (hosting) sağlar.
+
+Adım Adım Web Sitesini Yayına Alma İşlemi:
+
+⚙️ Ayarlara Giriş: Reponun üst menüsünden "Settings" (Ayarlar) sekmesine tıklıyoruz.
+
+📄 Pages Menüsü: Sol taraftaki menüden "Pages" seçeneğine giriyoruz.
+
+🌿 Kaynak (Source) Seçimi: "Build and deployment" başlığı altındaki Branch kısmını None yerine main olarak değiştiriyor ve kaydediyoruz.
+(Bu işlemle GitHub'a şu komutu veriyoruz: "Benim kodlarım main dalında, git oradaki index.html dosyamı bul ve tüm dünyaya yayınla!")
+
+🚀 Canlı URL: 1-2 dakika bekledikten sonra sayfanın en üstünde bize özel tahsis edilen canlı web site linkimizi (URL) görüyoruz. Artık sitemiz yayında!
+
+💡 Küçük Bir Not (Visibility & Enterprise): Ayarlar sayfasında görünen "30 günlük deneme (Enterprise)" yazısı, sitemizin 30 gün sonra kapanacağı anlamına gelmez. Bu uyarı, sitelerini internetten gizleyip sadece kendi çalışanlarına özel (Private) yapmak isteyen dev şirketlere sunulan ücretli paketin reklamıdır. Açık kaynaklı (Public) projelerimiz için GitHub Pages sonsuza kadar ücretsizdir!
